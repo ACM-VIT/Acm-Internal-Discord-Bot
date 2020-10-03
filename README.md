@@ -4,6 +4,7 @@
 
 <p align="center"> 
 A new and shiny discord chatbot in develpoment. 
+  
 Gonna be used in our new ecosystem of internal project mangement. sexy stuff i know. 
 
 <p>

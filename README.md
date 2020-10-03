@@ -24,7 +24,7 @@ The overview starts here. Random text about the project, motive, how, what, why 
 
 ## Setup for development [Important]
 
-this requires a super secrect token in which resides in a .env file .
+this requires a super secrect token which resides in a .env file .
 please contact the project collaborators for the .env to start devlopment.
 
 Steps to start development.

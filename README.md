@@ -1,6 +1,6 @@
 ![ACM-HEADER](https://user-images.githubusercontent.com/14032427/92643737-e6252e00-f2ff-11ea-8a51-1f1b69caba9f.png)
 
-<h1 align="center"> ACMVIT discord chatbot </h1>
+<h1 align="center"> Tom ,ACMVIT internal discord chatbot </h1>
 
 <p align="center"> 
 A new and shiny discord chatbot in develpoment. Gonna be used in our new ecosystem of internal project mangement. sexy stuff i know. PLEASE come up with a better name for this cute bot. if you sent that as a pull request i ll approve immediately.
@@ -20,6 +20,11 @@ A new and shiny discord chatbot in develpoment. Gonna be used in our new ecosyst
 The overview starts here. Random text about the project, motive, how, what, why etc.
 
 ---
+
+## Why is this thing named Tom ?
+
+great question, its because the web team has a collective creative iq of -3.2. I don't care if your
+the akka from the canteen mess, if your submiting a pr for a name change i ll approve it
 
 ## Setup for development [Important]
 

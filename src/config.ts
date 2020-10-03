@@ -5,6 +5,7 @@ dotenv.config();
 
 export const environment = process.env.NODE_ENV;
 export const logDirectory = process.env.LOG_DIR;
+export const commandPrefix = "!";
 
 export const discordToken = process.env.TOKEN;
 
@@ -25,3 +26,5 @@ export const TIMEZONES = [
   { abbr: "UK", zone: "Europe/London" },
   { abbr: "IST", zone: "Asia/Kolkata" },
 ];
+
+export const tipsDirectory = "./tips";

@@ -19,12 +19,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TIMEZONES = exports.defaultEmbed = exports.discordToken = exports.logDirectory = exports.environment = void 0;
+exports.tipsDirectory = exports.TIMEZONES = exports.defaultEmbed = exports.discordToken = exports.commandPrefix = exports.logDirectory = exports.environment = void 0;
 const discord_js_1 = require("discord.js");
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 exports.environment = process.env.NODE_ENV;
 exports.logDirectory = process.env.LOG_DIR;
+exports.commandPrefix = "!";
 exports.discordToken = process.env.TOKEN;
 exports.defaultEmbed = () => {
     return new discord_js_1.MessageEmbed()
@@ -40,4 +41,5 @@ exports.TIMEZONES = [
     { abbr: "UK", zone: "Europe/London" },
     { abbr: "IST", zone: "Asia/Kolkata" },
 ];
+exports.tipsDirectory = "./tips";
 //# sourceMappingURL=config.js.map

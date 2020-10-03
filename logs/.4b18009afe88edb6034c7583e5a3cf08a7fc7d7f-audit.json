@@ -6,9 +6,9 @@
     "auditLog": "/home/gokulkurup/root/acminternalbot/logs/.4b18009afe88edb6034c7583e5a3cf08a7fc7d7f-audit.json",
     "files": [
         {
-            "date": 1601721293533,
+            "date": 1601724226309,
             "name": "/home/gokulkurup/root/acminternalbot/logs/2020-10-03.log",
-            "hash": "53dda50a6b9622a75c80d70c0993990f"
+            "hash": "7fdf590e1ace8dfad30c462e945f9cc6"
         }
     ]
 }

@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/gokulkurup/root/acminternalbot/logs/.e97465116fc30c984a94f083016708e56f65fd1e-audit.json",
+    "files": [
+        {
+            "date": 1601724162867,
+            "name": "/home/gokulkurup/root/acminternalbot/logs/2020-10-03.log",
+            "hash": "fa06b4d03abddcda10dce0728904281d"
+        }
+    ]
+}

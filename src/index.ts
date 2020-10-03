@@ -2,11 +2,12 @@ require("dotenv").config();
 import { discordToken, prefix } from "./config";
 import { Client, Collection } from "discord.js";
 import Logger from "./core/Logger";
-import fs from "fs";
 import { Bot } from "./types/types";
-import Command from "./core/command";
-import path from "path";
 import commands from "./commands";
+
+process.on("unhandledRejection", (error) => {
+  console.error("Unhandled promise rejection:", error);
+});
 
 export const bot: Bot = new Client();
 bot.commands = new Collection();

@@ -9,6 +9,9 @@ const config_1 = require("./config");
 const discord_js_1 = require("discord.js");
 const Logger_1 = __importDefault(require("./core/Logger"));
 const commands_1 = __importDefault(require("./commands"));
+process.on("unhandledRejection", (error) => {
+    console.error("Unhandled promise rejection:", error);
+});
 exports.bot = new discord_js_1.Client();
 exports.bot.commands = new discord_js_1.Collection();
 exports.bot.on("ready", () => {

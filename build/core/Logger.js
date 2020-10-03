@@ -10,27 +10,27 @@ const winston_daily_rotate_file_1 = __importDefault(require("winston-daily-rotat
 const config_1 = require("../config");
 let dir = config_1.logDirectory;
 if (!dir)
-    dir = path_1.default.resolve("logs");
+    dir = path_1.default.resolve('logs');
 // create directory if it is not present
 if (!fs_1.default.existsSync(dir)) {
     // Create the directory if it does not exist
     fs_1.default.mkdirSync(dir);
 }
-const logLevel = config_1.environment === "development" ? "debug" : "warn";
+const logLevel = config_1.environment === 'development' ? 'debug' : 'warn';
 const options = {
     file: {
         level: logLevel,
-        filename: dir + "/%DATE%.log",
-        datePattern: "YYYY-MM-DD",
+        filename: dir + '/%DATE%.log',
+        datePattern: 'YYYY-MM-DD',
         zippedArchive: true,
         timestamp: true,
         handleExceptions: true,
         humanReadableUnhandledException: true,
         prettyPrint: true,
         json: true,
-        maxSize: "20m",
+        maxSize: '20m',
         colorize: true,
-        maxFiles: "14d",
+        maxFiles: '14d',
     },
 };
 exports.default = winston_1.createLogger({

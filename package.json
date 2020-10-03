@@ -1,0 +1,34 @@
+{
+  "name": "acminternalbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "serve": "node -r dotenv/config build/index.js",
+    "build": "npm run build-ts",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "watch-node": "nodemon -r dotenv/config build/index.js",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/typescript": "^2.0.0",
+    "@types/winston": "^2.4.4",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "node": "^14.13.0",
+    "path": "^0.12.7",
+    "typescript": "^4.0.3",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2"
+  }
+}

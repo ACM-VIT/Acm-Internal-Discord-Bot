@@ -3,8 +3,8 @@
 <h1 align="center"> Tom ,ACMVIT internal discord chatbot </h1>
 
 <p align="center"> 
-A new and shiny discord chatbot in develpoment. Gonna be used in our new ecosystem of internal project mangement. sexy stuff i know. PLEASE come up with a better name for this cute bot. if you sent that as a pull request i ll approve immediately.
-</p>
+A new and shiny discord chatbot in develpoment. 
+Gonna be used in our new ecosystem of internal project mangement. sexy stuff i know. 
 
 <p>
   <a href="https://acmvit.in/" target="_blank">

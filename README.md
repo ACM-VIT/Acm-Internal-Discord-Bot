@@ -1,9 +1,9 @@
 ![ACM-HEADER](https://user-images.githubusercontent.com/14032427/92643737-e6252e00-f2ff-11ea-8a51-1f1b69caba9f.png)
 
-<h1 align="center"> PROJECT TITLE </h1>
+<h1 align="center"> ACMVIT discord chatbot </h1>
 
 <p align="center"> 
-Short description about the project.
+A new and shiny discord chatbot in develpoment. Gonna be used in our new ecosystem of internal project mangement. sexy stuff i know. PLEASE come up with a better name for this cute bot. if you sent that as a pull request i ll approve immediately.
 </p>
 
 <p>
@@ -20,6 +20,19 @@ Short description about the project.
 The overview starts here. Random text about the project, motive, how, what, why etc.
 
 ---
+
+## Setup for development [Important]
+
+this requires a super secrect token in which resides in a .env file locked in vault.
+please contact the project collaborators for the .env to start devlopment.
+
+Steps to start development.
+
+1. clone repo
+2. npm i in terminal
+3. install dev dependencies from package.json
+4. npm run watch for distraction free development
+5. (or) npm start
 
 ## Screenshots
 

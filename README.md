@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-ACM INTERNAL DISCORD CHATBOT
-
-Setup:
-u first need a .env file which contains the sesitive
-=======
 ![ACM-HEADER](https://user-images.githubusercontent.com/14032427/92643737-e6252e00-f2ff-11ea-8a51-1f1b69caba9f.png)
 
 <h1 align="center"> PROJECT TITLE </h1>
@@ -35,9 +29,11 @@ The overview starts here. Random text about the project, motive, how, what, why 
 ---
 
 ## Usage
+
 <!-- How To, Features, Installation etc. as subheadings in this section. example-->
 
 Lets get started!
+
 ```console
 git remote add
 git fetch
@@ -50,4 +46,5 @@ git merge
 
 **Authors:** <!-- [author1's name](link to their github profile), [author2's name](link to their github profile) .. -->  
 **Contributors:** <!-- Generate contributors list using this link - https://contributors-img.web.app/preview -->
->>>>>>> f4014811ca6cd363d7d5359439549fb732df4826
+
+> > > > > > > f4014811ca6cd363d7d5359439549fb732df4826

@@ -1,20 +1,33 @@
-import Discord from "discord.js"; // imports the discord library
-import { readFile } from "fs";
-import { promisify } from "util";
-import path from "path";
-import Logger from "./core/Logger";
-import { discordBotToken } from "./config";
+import express, { Request, Response } from 'express';
+import Discord, { Message } from "discord.js";
+import { DISCORD_TOKEN } from './config/secrets';
+import CommandHandler from './commandHandler';
+import config from './config/botConfig';
 
+const PORT = process.env.PORT || 5000;
+
+const app = express();
 const client = new Discord.Client();
 
-client.once("ready", () => {
-  Logger.info("mr. bot ready to rock and roll !");
+//////////////////////////////////////////////////////////////////
+//             EXPRESS SERVER SETUP FOR UPTIME ROBOT            //
+//////////////////////////////////////////////////////////////////
+app.use(express.urlencoded({ extended: true }));
+
+app.use('/', (request: Request, response: Response) => {
+  response.sendStatus(200);
 });
 
-client
-  .login(discordBotToken)
-  .catch((err) =>
-    Logger.error(
-      `this token is invalid. the token you gave :${discordBotToken}`
-    )
-  );
+const commandHandler = new CommandHandler(config.prefix);
+
+//////////////////////////////////////////////////////////////////
+//                    DISCORD CLIENT LISTENERS                  //
+//////////////////////////////////////////////////////////////////
+// Discord Events: https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-channelCreate
+
+client.on("ready", () => { console.log("Hive Greeter has started"); });
+client.on("message", (message: Message) => { commandHandler.handleMessage(message); });
+client.on("error", e => { console.error("Discord client error!", e); });
+
+client.login(DISCORD_TOKEN);
+app.listen(PORT, () => console.log(`Server started on port ${PORT}!`));

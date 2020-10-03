@@ -1,11 +1,10 @@
 ![ACM-HEADER](https://user-images.githubusercontent.com/14032427/92643737-e6252e00-f2ff-11ea-8a51-1f1b69caba9f.png)
 
-<h1 align="center"> ACMVIT discord chatbot </h1>
+<h1 align="center"> ACMVIT internal discord chatbot </h1>
 
 <p align="center"> 
-A new and shiny discord chatbot in develpoment. Gonna be used in our new ecosystem of internal project mangement. sexy stuff i know. PLEASE come up with a better name for this cute bot. if you sent that as a pull request i ll approve immediately.
-</p>
-
+A new and shiny discord chatbot in develpoment. 
+Gonna be used in our new ecosystem of internal project mangement.
 <p>
   <a href="https://acmvit.in/" target="_blank">
     <img alt="made-by-acm" src="https://img.shields.io/badge/MADE%20BY-ACM%20VIT-blue?style=for-the-badge" />
@@ -21,9 +20,11 @@ The overview starts here. Random text about the project, motive, how, what, why 
 
 ---
 
+
+
 ## Setup for development [Important]
 
-this requires a super secrect token in which resides in a .env file locked in vault.
+this requires a super secrect token which resides in a .env file .
 please contact the project collaborators for the .env to start devlopment.
 
 Steps to start development.

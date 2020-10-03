@@ -35,7 +35,6 @@ bot.on("message", (message: any) => {
 
   if (!command) return;
 
-  Logger.info(`${command.hasArgs}:${args.length}`);
   if (!!command.hasArgs && args.length == 0) {
     let reply = `You didn't provide any arguments, ${message.author}!`;
     if (command.usage) {

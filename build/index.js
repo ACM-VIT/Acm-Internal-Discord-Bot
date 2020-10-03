@@ -30,7 +30,6 @@ exports.bot.on("message", (message) => {
         exports.bot.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
     if (!command)
         return;
-    Logger_1.default.info(`${command.hasArgs}:${args.length}`);
     if (!!command.hasArgs && args.length == 0) {
         let reply = `You didn't provide any arguments, ${message.author}!`;
         if (command.usage) {

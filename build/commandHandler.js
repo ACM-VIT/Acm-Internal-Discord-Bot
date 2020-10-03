@@ -4,11 +4,8 @@ const commands_1 = require("./commands");
 const commandParser_1 = require("./models/commandParser");
 class CommandHandler {
     constructor(prefix) {
-        const commandClasses = [
-            commands_1.GreetCommand,
-            commands_1.TimeCommand
-        ];
-        this.commands = commandClasses.map(commandClass => new commandClass());
+        const commandClasses = [commands_1.GreetCommand, commands_1.TimeCommand];
+        this.commands = commandClasses.map((commandClass) => new commandClass());
         this.prefix = prefix;
     }
     /** Executes user commands contained in a message if appropriate. */
@@ -16,14 +13,14 @@ class CommandHandler {
         if (message.author.bot || !this.isCommand(message)) {
             return;
         }
-        message.reply(`Hive Greeter recieved '${this.echoMessage(message)}' from ${message.author.tag}`);
+        //message.reply(`Hive Greeter recieved '${this.echoMessage(message)}' from ${message.author.tag}`);
         const commandParser = new commandParser_1.CommandParser(message, this.prefix);
-        const matchedCommand = this.commands.find(command => command.commandNames.includes(commandParser.parsedCommandName));
+        const matchedCommand = this.commands.find((command) => command.commandNames.includes(commandParser.parsedCommandName));
         if (!matchedCommand) {
             await message.reply(`I don't recognize that command. Try !help.`);
         }
         else {
-            await matchedCommand.run(message).catch(error => {
+            await matchedCommand.run(message).catch((error) => {
                 message.reply(`'${this.echoMessage(message)}' failed because of ${error}`);
             });
         }

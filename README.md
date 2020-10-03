@@ -4,9 +4,7 @@
 
 <p align="center"> 
 A new and shiny discord chatbot in develpoment. 
-  
-Gonna be used in our new ecosystem of internal project mangement. sexy stuff i know. 
-
+Gonna be used in our new ecosystem of internal project mangement.
 <p>
   <a href="https://acmvit.in/" target="_blank">
     <img alt="made-by-acm" src="https://img.shields.io/badge/MADE%20BY-ACM%20VIT-blue?style=for-the-badge" />

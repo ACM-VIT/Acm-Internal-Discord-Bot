@@ -27,7 +27,7 @@ the akka from the canteen mess, if your submiting a pr for a name change i ll ap
 
 ## Setup for development [Important]
 
-this requires a super secrect token in which resides in a .env file locked in vault.
+this requires a super secrect token in which resides in a .env file .
 please contact the project collaborators for the .env to start devlopment.
 
 Steps to start development.

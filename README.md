@@ -17,6 +17,9 @@ A shiny new discord chatbot in development. Part of the new project mangement ec
 
 ---
 
+## Idea Overview
+https://www.notion.so/ACM-internal-app-a9a4ceef6a174ef9b5a2629356d38543
+
 ## Setup
 
 A token is required and it resides in a super secrect .env file.

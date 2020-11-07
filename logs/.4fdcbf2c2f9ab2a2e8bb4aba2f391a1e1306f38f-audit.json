@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\projectsCertificates\\internalBot\\Acm-Internal-Discord-Bot\\logs\\.4fdcbf2c2f9ab2a2e8bb4aba2f391a1e1306f38f-audit.json",
+    "files": [
+        {
+            "date": 1604760446571,
+            "name": "D:\\projectsCertificates\\internalBot\\Acm-Internal-Discord-Bot\\logs\\2020-11-07.log",
+            "hash": "1da60dee4ae7002d8bc540317ee7b71f"
+        }
+    ]
+}
